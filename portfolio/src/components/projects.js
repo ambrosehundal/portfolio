@@ -1,13 +1,20 @@
 import React from 'react'
 
 
-const Projects = ({name, description, tech_stack, project_link}) => {
+const Projects = (names) => {
+    const projects = names;
+    const projectlist = projects.forEach(element => {
+
+        <li>{element}</li>
+        
+    });
+
+
+    
     return (
         <div>
-            <h3>{name}</h3>
-            <p>{description}</p>
-            <h6>{tech_stack}</h6>
-            <p>{project_link}</p>
+            <ul>{projectlist}</ul>
+       
         
         </div>
     )
