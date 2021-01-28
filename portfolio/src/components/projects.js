@@ -1,23 +1,15 @@
 import React from 'react'
 
 
-const Projects = (names) => {
-    const projects = names;
-    const projectlist = projects.forEach(element => {
+const Projects = (props) => {
+    const names = props.names
+    const listItems = names.map((name) =>
+        <li>{name}</li>
 
-        <li>{element}</li>
-        
-    });
-
-
-    
-    return (
-        <div>
-            <ul>{projectlist}</ul>
-       
-        
-        </div>
-    )
+  );
+  return (
+    <ul>{listItems}</ul>
+  );
 
 }
 
