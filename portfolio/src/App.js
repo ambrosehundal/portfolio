@@ -3,7 +3,7 @@ import './App.css';
 import Summary from './components/Summary'
 import Projects from './components/projects'
 import Profilepic from './components/profilepic'
-import pic from './public/download.png'
+import pic from './images/logo192.png'
 
 function App() {
   const projectnames = ['proscout', 'bodyfeed']
@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <header className="App-header">
 
-        <Profilepic/>
+        <Profilepic pic={pic}/>
         <Summary/>
         <Projects names={projectnames}/>
         

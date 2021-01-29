@@ -1,11 +1,12 @@
 import React from 'react'
 
-function Profilepic(){
+function Profilepic(props){
+    
 
     
         return (
             <div>
-            <img src={pic}/>
+            <img src={props.pic}/>
                 
             </div>
         )
